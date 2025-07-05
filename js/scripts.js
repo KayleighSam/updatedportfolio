@@ -57,17 +57,29 @@
 	});
 	
 
-    /* Back To Top Button */
-    // create the back to top button
-    $('body').prepend('<a href="body" class="back-to-top page-scroll">Back to Top</a>');
-    var amountScrolled = 700;
-    $(window).scroll(function() {
-        if ($(window).scrollTop() > amountScrolled) {
-            $('a.back-to-top').fadeIn('500');
-        } else {
-            $('a.back-to-top').fadeOut('500');
-        }
-    });
+ // Create the back to top button and insert into body
+$('body').prepend('<a href="#top" class="back-to-top page-scroll">Back to Top</a>');
+
+const amountScrolled = 700;
+
+$(window).scroll(function () {
+  if ($(window).scrollTop() > amountScrolled) {
+    $('a.back-to-top').fadeIn(500);
+  } else {
+    $('a.back-to-top').fadeOut(500);
+  }
+});
+
+// Smooth scroll for page-scroll class
+$(document).on('click', 'a.page-scroll', function (event) {
+  const target = $(this.getAttribute('href'));
+  if (target.length) {
+    event.preventDefault();
+    $('html, body').animate({
+      scrollTop: target.offset().top
+    }, 1000);
+  }
+});
 
 
 	/* Removes Long Focus On Buttons */
