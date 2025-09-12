@@ -124,20 +124,34 @@
           <div class="col-lg-6 col-md-7 col-12">
             <div class="text-container py-5 px-2">
               <h1 class="display-4 fw-bold mb-3" style="
-                font-family: 'Playfair Display', serif;
-                font-size: 3rem;
-                color: #ffffff;
-                text-shadow: 0 2px 8px rgba(255, 255, 255, 0.25);
-                letter-spacing: 1px;
-              ">
-                Hi, I'm Sam
-              </h1>
-              <p class="hero-text mb-3">
-                Full Stack Developer experienced in HTML, CSS, JavaScript, React, Python, Flask & REST APIs and more.
-              </p>
-              <p class="hero-text mb-4">
-                I build scalable and user-friendly web apps that bring your ideas to life.
-              </p>
+              font-family: 'Playfair Display', serif;
+              font-size: 3rem;
+              color: #ffffff;
+              text-shadow: 0 3px 10px rgba(255, 255, 255, 0.4);
+              letter-spacing: 1px;
+            ">
+              Hi, I'm Sam
+            </h1>
+            
+            <p class="hero-text mb-3 fw-semibold" style="color: #f8f9fa; font-size: 1.1rem;">
+              Full Stack Developer experienced in:
+            </p>
+            
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="badge bg-primary">HTML</span>
+              <span class="badge bg-primary">CSS</span>
+              <span class="badge bg-primary">JavaScript</span>
+              <span class="badge bg-primary">React</span>
+              <span class="badge bg-success">Python</span>
+              <span class="badge bg-success">Django</span>
+              <span class="badge bg-success">Flask</span>
+              <!-- <span class="badge bg-info text-dark">REST APIs</span> -->
+            </div>
+            
+            <p class="hero-text mb-4 fw-light" style="color: #f1f1f1; font-size: 1.05rem;">
+              I build scalable, secure, and user-friendly web applications that bring ideas to life.
+            </p>
+            
               
     
               <div class="d-flex flex-wrap">
@@ -200,142 +214,225 @@
     </div>
   </section>
   
-  <!-- Resume Section -->
-  <section id="resume" class="py-5 bg-white border-top">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h1 class="display-5 fw-bold text-primary">Resume</h1>
-        <p class="text-muted mx-auto" style="max-width: 720px;">
-          Passionate and results-driven Full Stack Developer with a strong foundation in modern web technologies and a proven track record of delivering scalable, user-focused solutions.
-        </p>
-      </div>
-  
-      <div class="row gy-4">
-        <!-- Left Column -->
-        <div class="col-md-6">
-          <!-- Personal Info -->
-          <h4 class="text-secondary mb-3">📇 Personal Information</h4>
-          <ul class="ps-3">
-            <li><strong>Name:</strong> Sam Mwaura</li>
-            <li><strong>Address:</strong> 342-01000, Thika, Kenya</li>
-            <li><strong>Zip Code:</strong> 01000</li>
-            <li><strong>Email:</strong> <a href="mailto:1samempire@gmail.com">1samempire@gmail.com</a></li>
-            <li><strong>Phone:</strong> +254 728 231 511</li>
-          </ul>
-  
-          <!-- Education -->
-          <h4 class="text-secondary mt-4 mb-3">🎓 Education</h4>
-          <ul class="ps-3">
-            <li><strong>2024 – 2025:</strong> Moringa School – Full Stack Software Engineering</li>
-            <li><strong>2015 – 2018:</strong> Mount Kenya University – BSc in Information Technology</li>
-            <li><strong>2014:</strong> Kiwan College – Computer Packages</li>
-          </ul>
-  
-          <!-- Proficiencies -->
-          <h4 class="text-secondary mt-4 mb-3">💻 Proficiencies</h4>
-          <div class="row g-3">
-  
-            <!-- Frontend -->
-            <div class="col-md-6">
-              <h6 class="fw-bold">🌐 Frontend</h6>
-              <div>
-                <span class="badge rounded-pill bg-primary">HTML</span>
-                <span class="badge rounded-pill bg-primary">CSS</span>
-                <span class="badge rounded-pill bg-primary">JavaScript</span>
-                <span class="badge rounded-pill bg-primary">React.js</span>
-                <span class="badge rounded-pill bg-primary">JSON</span>
+<!-- Resume Section -->
+<section id="resume" class="py-5 bg-light border-top">
+  <div class="container">
+    
+    <!-- Header -->
+    <div class="text-center mb-5">
+      <h1 class="display-5 fw-bold text-primary">Resume</h1>
+      <p class="text-muted mx-auto" style="max-width: 720px;">
+        Passionate and results-driven <strong>Full Stack Developer</strong> with a solid foundation in modern web technologies 
+        and a proven track record of delivering scalable, user-focused solutions.
+      </p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Left Column -->
+      <div class="col-lg-6">
+        
+        <!-- Personal Info Card -->
+        <div class="card shadow-sm border-0 mb-4">
+          <div class="card-body">
+            <h4 class="text-secondary mb-3">📇 Personal Information</h4>
+            <ul class="list-unstyled">
+              <li><strong>Name:</strong> Sam Mwaura</li>
+              <li><strong>Address:</strong> 342-01000, Thika, Kenya</li>
+              <li><strong>Zip Code:</strong> 01000</li>
+              <li><strong>Email:</strong> 
+                <a href="mailto:1samempire@gmail.com">1samempire@gmail.com</a>
+              </li>
+              <li><strong>Phone:</strong> +254 728 231 511</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Education Timeline -->
+        <div class="card shadow-sm border-0 mb-4">
+          <div class="card-body">
+            <h4 class="text-secondary mb-4">🎓 Education</h4>
+            <div class="timeline">
+              <div class="timeline-item mb-4">
+                <h6 class="fw-bold text-primary">Moringa School</h6>
+                <p class="mb-1"><em>Full Stack Software Engineering</em></p>
+                <small class="text-muted">2024 – 2025</small>
               </div>
-            </div>
-  
-            <!-- Backend -->
-            <div class="col-md-6">
-              <h6 class="fw-bold">🖥️ Backend</h6>
-              <div>
-                <span class="badge rounded-pill bg-success">Python</span>
-                <span class="badge rounded-pill bg-success">Flask</span>
-                <span class="badge rounded-pill bg-success">FastAPI</span>
-                <span class="badge rounded-pill bg-success">SQLAlchemy</span>
-                <span class="badge rounded-pill bg-success">Alembic</span>
+              <div class="timeline-item mb-4">
+                <h6 class="fw-bold text-primary">Mount Kenya University</h6>
+                <p class="mb-1"><em>BSc in Information Technology</em></p>
+                <small class="text-muted">2015 – 2018</small>
               </div>
-            </div>
-  
-            <!-- Dev Tools -->
-            <div class="col-md-6">
-              <h6 class="fw-bold">🛠️ Dev Tools</h6>
-              <div>
-                <span class="badge rounded-pill bg-dark">Git</span>
-                <span class="badge rounded-pill bg-dark">GitHub</span>
-                <span class="badge rounded-pill bg-dark">Postman</span>
-                <span class="badge rounded-pill bg-dark">Thunder Client</span>
-                <span class="badge rounded-pill bg-dark">DrawSQL</span>
-              </div>
-            </div>
-  
-            <!-- Deployment -->
-            <div class="col-md-6">
-              <h6 class="fw-bold">🚀 Deployment</h6>
-              <div>
-                <span class="badge rounded-pill bg-warning text-dark">Render</span>
-                <span class="badge rounded-pill bg-warning text-dark">Netlify</span>
-                <span class="badge rounded-pill bg-warning text-dark">Vercel</span>
-              </div>
-            </div>
-  
-            <!-- Design Tools -->
-            <div class="col-md-6">
-              <h6 class="fw-bold">🎨 Design Tools</h6>
-              <div>
-                <span class="badge rounded-pill bg-info text-dark">Figma</span>
-                <span class="badge rounded-pill bg-info text-dark">Excalidraw</span>
-              </div>
-            </div>
-  
-            <!-- IT Services -->
-            <div class="col-md-6">
-              <h6 class="fw-bold">💼 IT Services</h6>
-              <div>
-                <span class="badge rounded-pill bg-secondary">Networking</span>
-                <span class="badge rounded-pill bg-secondary">Tech Support</span>
-                <span class="badge rounded-pill bg-secondary">Graphics Design</span>
-                <span class="badge rounded-pill bg-secondary">Web Hosting</span>
+              <div class="timeline-item">
+                <h6 class="fw-bold text-primary">Kiwan College</h6>
+                <p class="mb-1"><em>Computer Packages</em></p>
+                <small class="text-muted">2014</small>
               </div>
             </div>
           </div>
         </div>
-  
-        <!-- Right Column -->
-        <div class="col-md-6">
-          <!-- Experience -->
-          <h4 class="text-secondary mb-3">🧠 Experience & Projects</h4>
-          <ul class="ps-3">
-            
-            <li><strong>Hackathon (2018):</strong> ZEP-RE – 1st Runners Up – Claim Management System</li>
-            <li><strong>CEO (2018–2019):</strong> Eimod Technologies – Led design, marketing, web development</li>
-            <li><strong>Director (2018–2024):</strong> Sam Technologies – Cyber services, hosting, IT consulting</li>
-            <li><strong>Teaching Assistant (2018):</strong> Maasai Mara University in collaboration with Highlands State College – Programming & IT lessons</li>
-          </ul>
-  
-          <!-- Skills -->
-          <h4 class="text-secondary mt-4 mb-3">💪 Skills & Strengths</h4>
-          <ul class="ps-3">
-            <li>Strong analytical thinking and communication</li>
-            <li>Self-motivated and dependable under minimal supervision</li>
-            <li>Team-oriented and results-driven</li>
-            <li>Creative, adaptable in fast-paced environments</li>
-          </ul>
-  
-          <!-- Interests -->
-          <h4 class="text-secondary mt-4 mb-3">🎯 Interests</h4>
-          <ul class="ps-3">
-            <li>Community service and environmental initiatives</li>
-            <li>Reading tech articles and exploring new frameworks</li>
-            <li>Traveling, swimming, football, and acrobatics</li>
-          </ul>
+
+        <!-- Proficiencies Card -->
+        <div class="card shadow-sm border-0">
+          <div class="card-body">
+            <h4 class="text-secondary mb-3">💻 Proficiencies</h4>
+            <div class="row g-3">
+              
+              <!-- Frontend -->
+              <div class="col-md-6">
+                <h6 class="fw-bold">🌐 Frontend</h6>
+                <div>
+                  <span class="badge bg-primary text-white">HTML</span>
+                  <span class="badge bg-primary text-white">CSS</span>
+                  <span class="badge bg-primary text-white">JavaScript</span>
+                  <span class="badge bg-primary text-white">React.js</span>
+                  <span class="badge bg-primary text-white">JSON</span>
+                </div>
+              </div>
+
+              <!-- Backend -->
+              <div class="col-md-6">
+                <h6 class="fw-bold">🖥️ Backend</h6>
+                <div>
+                  <span class="badge bg-success text-white">Python</span>
+                  <span class="badge bg-success text-white">Django</span>
+                  <span class="badge bg-success text-white">Flask</span>
+                  <span class="badge bg-success text-white">FastAPI</span>
+                  <span class="badge bg-success text-white">SQLAlchemy</span>
+                  <span class="badge bg-success text-white">Alembic</span>
+                </div>
+              </div>
+
+              <!-- Dev Tools -->
+              <div class="col-md-6">
+                <h6 class="fw-bold">🛠️ Dev Tools</h6>
+                <div>
+                  <span class="badge bg-dark text-white">Git</span>
+                  <span class="badge bg-dark text-white">GitHub</span>
+                  <span class="badge bg-dark text-white">Postman</span>
+                  <span class="badge bg-dark text-white">Thunder Client</span>
+                  <span class="badge bg-dark text-white">DrawSQL</span>
+                </div>
+              </div>
+
+              <!-- Deployment -->
+              <div class="col-md-6">
+                <h6 class="fw-bold">🚀 Deployment</h6>
+                <div>
+                  <span class="badge bg-warning text-dark">Render</span>
+                  <span class="badge bg-warning text-dark">Netlify</span>
+                  <span class="badge bg-warning text-dark">Vercel</span>
+                </div>
+              </div>
+
+              <!-- Design Tools -->
+              <div class="col-md-6">
+                <h6 class="fw-bold">🎨 Design Tools</h6>
+                <div>
+                  <span class="badge bg-info text-dark">Figma</span>
+                  <span class="badge bg-info text-dark">Excalidraw</span>
+                </div>
+              </div>
+
+              <!-- IT Services -->
+              <div class="col-md-6">
+                <h6 class="fw-bold">💼 IT Services</h6>
+                <div>
+                  <span class="badge bg-secondary text-white">Networking</span>
+                  <span class="badge bg-secondary text-white">Tech Support</span>
+                  <span class="badge bg-secondary text-white">Graphics Design</span>
+                  <span class="badge bg-secondary text-white">Web Hosting</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
+
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-6">
+        
+        <!-- Experience Timeline -->
+        <div class="card shadow-sm border-0 mb-4">
+          <div class="card-body">
+            <h4 class="text-secondary mb-4">🧠 Experience & Projects</h4>
+            <div class="timeline">
+              <div class="timeline-item mb-4">
+                <h6 class="fw-bold text-primary">Hackathon – ZEP-RE</h6>
+                <p class="mb-1"><em>1st Runners Up – Claim Management System</em></p>
+                <small class="text-muted">2018</small>
+              </div>
+              <div class="timeline-item mb-4">
+                <h6 class="fw-bold text-primary">CEO – Eimod Technologies</h6>
+                <p class="mb-1"><em>Led design, marketing, web development</em></p>
+                <small class="text-muted">2018 – 2019</small>
+              </div>
+              <div class="timeline-item mb-4">
+                <h6 class="fw-bold text-primary">Director – Sam Technologies</h6>
+                <p class="mb-1"><em>Cyber services, hosting, IT consulting</em></p>
+                <small class="text-muted">2018 – 2024</small>
+              </div>
+              <div class="timeline-item">
+                <h6 class="fw-bold text-primary">Teaching Assistant</h6>
+                <p class="mb-1"><em>Maasai Mara University + Highlands State College – Programming & IT lessons</em></p>
+                <small class="text-muted">2018</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills Card -->
+        <div class="card shadow-sm border-0 mb-4">
+          <div class="card-body">
+            <h4 class="text-secondary mb-3">💪 Skills & Strengths</h4>
+            <ul class="list-unstyled">
+              <li>Strong analytical thinking and communication</li>
+              <li>Self-motivated and dependable under minimal supervision</li>
+              <li>Team-oriented and results-driven</li>
+              <li>Creative, adaptable in fast-paced environments</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Interests Card -->
+        <div class="card shadow-sm border-0">
+          <div class="card-body">
+            <h4 class="text-secondary mb-3">🎯 Interests</h4>
+            <ul class="list-unstyled">
+              <li>Community service and environmental initiatives</li>
+              <li>Reading tech articles and exploring new frameworks</li>
+              <li>Traveling, swimming, football, and acrobatics</li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </div>
-  </section>
-  
+  </div>
+</section>
+
+<!-- Timeline CSS -->
+<style>
+  .timeline {
+    border-left: 3px solid #0d6efd;
+    margin-left: 1rem;
+    padding-left: 1rem;
+  }
+  .timeline-item {
+    position: relative;
+  }
+  .timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -1.4rem;
+    top: 0.3rem;
+    width: 12px;
+    height: 12px;
+    background: #0d6efd;
+    border-radius: 50%;
+  }
+</style>
 
 
     <!-- Services Section -->
@@ -439,12 +536,24 @@
           </div>
           
 
+ <!-- Scope Safaris -->
+ <div class="col-md-6">
+  <div class="card border-0 shadow-sm">
+    <a href="https://scopesafarisdjango-ou4i.vercel.app/" target="_blank">
+      <img src="images/scopefin.png" class="card-img-top" alt="Scope Safaris">
+    </a>
+    <div class="card-body">
+      <p><strong>For:</strong> Scope Safaris – Tour agency offering curated travel experiences across Kenya and East Africa.</p>
+      <a href="https://scopesafarisdjango-ou4i.vercel.app/" target="_blank" class="btn btn-primary btn-sm mt-2">🔗 View Project</a>
+    </div>
+  </div>
+</div>
 
             <!-- Cranes Adventures -->
         <div class="col-md-6">
           <div class="card border-0 shadow-sm">
             <a href="https://www.cranesadventures.com/" target="_blank">
-              <img src="images/cranes.png" class="card-img-top" alt="Intelicode">
+              <img src="images/cranes.png" class="card-img-top" alt="Intelycode">
             </a>
             <div class="card-body">
               <p><strong>For:</strong> Cranes Adventures is a premier tour and travel company based in Kenya, dedicated to curating world-class safari experiences across East Africa. .</p>
@@ -453,18 +562,7 @@
           </div>
         </div>
 
-        <!-- Scope Safaris -->
-        <div class="col-md-6">
-            <div class="card border-0 shadow-sm">
-              <a href="https://scopesafaris.com/" target="_blank">
-                <img src="images/scope1.png" class="card-img-top" alt="Scope Safaris">
-              </a>
-              <div class="card-body">
-                <p><strong>For:</strong> Scope Safaris – Tour agency offering curated travel experiences across Kenya and East Africa.</p>
-                <a href="https://scopesafaris.com/" target="_blank" class="btn btn-primary btn-sm mt-2">🔗 View Project</a>
-              </div>
-            </div>
-          </div>
+       
           
 
       </div>
