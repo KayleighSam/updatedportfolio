@@ -1080,6 +1080,78 @@
       font-size: 0.95rem;
     }
 
+    /* Cool Footer */
+    .footer-bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .footer-name {
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent), var(--primary));
+      background-size: 300% 300%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradientShift 4s ease infinite;
+    }
+
+    .footer-dot {
+      color: var(--primary);
+      margin: 0 0.5rem;
+    }
+
+    .footer-code {
+      font-family: monospace;
+      font-weight: 700;
+      color: var(--primary);
+      text-shadow: 0 0 12px rgba(99, 102, 241, 0.8);
+    }
+
+    .footer-coffee {
+      display: inline-block;
+      animation: steam 2s ease-in-out infinite;
+    }
+
+    @keyframes steam {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-3px) rotate(-8deg); }
+    }
+
+    .back-to-top {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.6rem 1.4rem;
+      border: 1px solid var(--border);
+      border-radius: 50px;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .back-to-top i {
+      transition: transform 0.3s ease;
+    }
+
+    .back-to-top:hover {
+      border-color: var(--primary);
+      color: var(--text);
+      background: rgba(99, 102, 241, 0.1);
+      box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+    }
+
+    .back-to-top:hover i {
+      transform: translateY(-4px);
+    }
+
     /* Responsive */
     @media (max-width: 1200px) {
       .services-grid,
@@ -1365,6 +1437,7 @@
                         <span class="skill-badge">Django</span>
                         <span class="skill-badge">Flask</span>
                         <span class="skill-badge">FastAPI</span>
+                        <span class="skill-badge">PHP</span>
                         <span class="skill-badge">SQLAlchemy</span>
                         <span class="skill-badge">Alembic</span>
                     </div>
@@ -1397,6 +1470,8 @@
                         <span class="skill-badge">Render</span>
                         <span class="skill-badge">Netlify</span>
                         <span class="skill-badge">Vercel</span>
+                        <span class="skill-badge">AWS</span>
+                        <span class="skill-badge">Truehost</span>
                     </div>
                 </div>
 
@@ -1586,88 +1661,130 @@
 
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/p1.png" alt="Intelycode Institute">
-                        <div class="project-overlay">
-                            <a href="https://www.intelycodeinstitute.com/" target="_blank" class="project-link-overlay">
-                                View Live Project
+                        <div class="project-image">
+                            <img src="images/tenniball.png" alt="Tenniball World Series">
+                            <div class="project-overlay">
+                                <a href="https://www.tenniball.org/" target="_blank" class="project-link-overlay">
+                                    View Live Project
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Tenniball World Series</h3>
+                            <p class="project-description">
+                                Sports league platform for the Tenniball World Series, with team and player management, fixtures, standings and live league updates. Built with Django and React, hosted on AWS.
+                            </p>
+                            <a href="https://www.tenniball.org/" target="_blank" class="project-link">
+                                <span>View Project</span>
+                                <i class="fas fa-arrow-right"></i>
                             </a>
                         </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Intelycode Institute</h3>
-                        <p class="project-description">
-                            Full-stack coding bootcamp platform with comprehensive course management, student tracking, and interactive learning features.
-                        </p>
-                        <a href="https://www.intelycodeinstitute.com/" target="_blank" class="project-link">
-                            <span>View Project</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/p5.png" alt="Scope Safaris">
-                        <div class="project-overlay">
-                            <a href="https://scopesafaris.com/" target="_blank" class="project-link-overlay">
-                                View Live Project
+                        <div class="project-image">
+                            <img src="images/loop254.png" alt="Loop254">
+                            <div class="project-overlay">
+                                <a href="https://mku-connect-lilac.vercel.app/" target="_blank" class="project-link-overlay">
+                                    View Live Project
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Loop254</h3>
+                            <p class="project-description">
+                            Stay in the loop. Connect with people, join communities, discover opportunities and stay updated with what\'s happening around you.
+                        </p>
+                            <a href="https://mku-connect-lilac.vercel.app/" target="_blank" class="project-link">
+                                <span>View Project</span>
+                                <i class="fas fa-arrow-right"></i>
                             </a>
                         </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Scope Safaris</h3>
-                        <p class="project-description">
-                            Professional tour agency website with integrated booking system, destination galleries, and customer review management.
-                        </p>
-                        <a href="https://scopesafaris.com/" target="_blank" class="project-link">
-                            <span>View Project</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/p6.png" alt="Cranes Adventures">
-                        <div class="project-overlay">
-                            <a href="https://www.cranesadventures.com/" target="_blank" class="project-link-overlay">
-                                View Live Project
+                        <div class="project-image">
+                            <img src="images/intelycode.png" alt="Intelycode Institute">
+                            <div class="project-overlay">
+                                <a href="https://www.intelycodeinstitute.com/" target="_blank" class="project-link-overlay">
+                                    View Live Project
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Intelycode Institute</h3>
+                            <p class="project-description">
+                            Tech bootcamp shaping Africa\'s future through Software Engineering, Cyber Security, and Data Science &amp; AI programs, backed by a 92% job placement rate. Built the full learning platform: enrollment, M-Pesa payments, attendance, quizzes and student tracking.
+                        </p>
+                            <a href="https://www.intelycodeinstitute.com/" target="_blank" class="project-link">
+                                <span>View Project</span>
+                                <i class="fas fa-arrow-right"></i>
                             </a>
                         </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Cranes Adventures</h3>
-                        <p class="project-description">
-                            Premier safari company website featuring tour packages, online booking system, and stunning destination showcases.
-                        </p>
-                        <a href="https://www.cranesadventures.com/" target="_blank" class="project-link">
-                            <span>View Project</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
                 </div>
 
                 <div class="project-card">
-                  <div class="project-image">
-                      <img src="images/p4.png" alt="Team Building Masters">
-                      <div class="project-overlay">
-                          <a href="https://teambuildingmasters.com/" target="_blank" class="project-link-overlay">
-                              View Live Project
-                          </a>
-                      </div>
-                  </div>
-                  <div class="project-content">
-                      <h3 class="project-title">Team Building Masters</h3>
-                      <p class="project-description">
-                        Team Building Masters is Kenya's leading provider of team building experiences, corporate training solutions, and motivational speaking services. 
-                      </p>
-                      <a href="https://teambuildingmasters.com/" target="_blank" class="project-link">
-                          <span>View Project</span>
-                          <i class="fas fa-arrow-right"></i>
-                      </a>
-                  </div>
-              </div>
+                        <div class="project-image">
+                            <img src="images/p5.png" alt="Scope Safaris">
+                            <div class="project-overlay">
+                                <a href="https://scopesafaris.com/" target="_blank" class="project-link-overlay">
+                                    View Live Project
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Scope Safaris</h3>
+                            <p class="project-description">
+                                Professional tour agency website with integrated booking system, destination galleries, and customer review management.
+                            </p>
+                            <a href="https://scopesafaris.com/" target="_blank" class="project-link">
+                                <span>View Project</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                </div>
+
+                <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/p4.png" alt="Team Building Masters">
+                            <div class="project-overlay">
+                                <a href="https://teambuildingmasters.com/" target="_blank" class="project-link-overlay">
+                                    View Live Project
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Team Building Masters</h3>
+                            <p class="project-description">
+                              Team Building Masters is Kenya's leading provider of team building experiences, corporate training solutions, and motivational speaking services. 
+                            </p>
+                            <a href="https://teambuildingmasters.com/" target="_blank" class="project-link">
+                                <span>View Project</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                </div>
+
+                <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/p6.png" alt="Cranes Adventures">
+                            <div class="project-overlay">
+                                <a href="https://www.cranesadventures.com/" target="_blank" class="project-link-overlay">
+                                    View Live Project
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Cranes Adventures</h3>
+                            <p class="project-description">
+                                Premier safari company website featuring tour packages, online booking system, and stunning destination showcases.
+                            </p>
+                            <a href="https://www.cranesadventures.com/" target="_blank" class="project-link">
+                                <span>View Project</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                </div>
             </div>
         </div>
     </section>
@@ -1713,7 +1830,17 @@
                     <i class="fab fa-linkedin-in"></i>
                 </a>
             </div>
-            <p class="footer-text">© 2025 Sam Mwaura. Crafted with precision and passion.</p>
+            <div class="footer-bottom">
+                <p class="footer-text">
+                    © <span id="year">2026</span> <span class="footer-name">Sam Mwaura</span>
+                    <span class="footer-dot">•</span>
+                    Built with <span class="footer-code">&lt;/&gt;</span> &amp; <span class="footer-coffee">☕</span> in Kenya 🇰🇪
+                </p>
+                <a href="#home" class="back-to-top" aria-label="Back to top">
+                    <i class="fas fa-arrow-up"></i>
+                    <span>Back to top</span>
+                </a>
+            </div>
         </div>
     </footer>
 
@@ -1766,6 +1893,9 @@
                 }
             });
         });
+    </script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
